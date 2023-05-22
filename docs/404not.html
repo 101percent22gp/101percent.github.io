@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache"> 
+    <meta http-equiv="Cache-Control" content="no-store">
+    <meta name="description" content="お探しのページが見つかりませんでした。">
+    <link rel="icon" href="../../../../../../../../favicon.ico">
+    <title>404 | 101%</title>
+    <link rel="stylesheet" href="../../../../../../../../style.css?202302280806">
+</head>
+<div id="mouse-stalker"></div>
+<body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="index.html">トップ</a></li>
+            <li><a href="about.html">101%について</a></li>
+            <li>
+              <a href="contents.html">コンテンツ</a>
+              <ul>
+                <li><a href="Blog.html">ブログ</a></li>
+                <li><a href="#">準備中</a></li>
+                <li><a href="#">準備中</a></li>
+              </ul>
+            <li><a href="#">お問い合わせ</a></li>
+          </ul>
+        </nav>
+        <a href="#">
+          <img src="../../../../../../../../images/logo.jpg" alt="101%ロゴ">
+        </a>
+      </header>
+   <h2>101%の可能性を！</h2>
+<br><br>
+
+<h3>お探しのページが見つかりませんでした。</h3>
+<br><br>
+
+<div id="countdown"></div> <span style="font-size: 30px;">秒後にトップページに戻ります。</span><br>
+
+<br><br>
+    <footer>
+      <div class="sitemap">
+        <h2>サイトマップ</h2>
+        <ul>
+          <li><a href="#">ホーム</a></li>
+          <li><a href="about">101%について</a></li>
+          <li><a href="#">準備中</a></li>
+          <li><a href="#">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <small>Copyright &copy; 2022 <a href="index.html">101%</a> All rights reserved.</small>
+    </footer>
+    <p id="page-top"><a href="#">上に参る</a></p>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+    <script>
+      setTimeout(function() {
+  window.location.href = "https://101pecent.jp";
+}, 3000);
+    </script>
+
+<!--カウントダウンを表示するためのコード-->
+
+<script>
+  // カウントダウンする秒数を指定する
+var countDown = 3;
+
+// HTML要素を取得する
+var countdownElement = document.getElementById("countdown");
+
+// カウントダウンする処理を定義する
+var countdown = setInterval(function() {
+
+  // カウントダウンの残り秒数を表示する
+  countdownElement.innerHTML = countDown;
+
+  // 残り秒数を1秒ずつ減らす
+  countDown--;
+
+  // カウントダウンが終了した場合は、処理を停止する
+  if (countDown < 0) {
+    clearInterval(countdown);
+    countdownElement.innerHTML = "Go!";
+  }
+
+}, 1000);
+
+</script>
+
+</body>
+</html>
